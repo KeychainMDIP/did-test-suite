@@ -1,0 +1,110 @@
+{
+  "didMethod": "did:mdip",
+  "implementation": "DID MDIP Test Suite",
+  "implementer": "Self ID",
+  "expectedOutcomes": {
+    "defaultOutcome": [
+      0,
+      2
+    ],
+    "invalidDidErrorOutcome": [],
+    "notFoundErrorOutcome": [],
+    "representationNotSupportedErrorOutcome": [],
+    "deactivatedOutcome": [
+      1
+    ]
+  },
+  "executions": [
+    {
+      "function": "resolve",
+      "input": {
+        "did": "did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb",
+        "resolutionOptions": {}
+      },
+      "output": {
+        "@context": "https://w3id.org/did-resolution/v1",
+        "didResolutionMetadata": {},
+        "didDocument": {
+          "@context": [
+            "https://www.w3.org/ns/did/v1"
+          ],
+          "id": "did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb",
+          "verificationMethod": [
+            {
+              "id": "#key-1",
+              "controller": "did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb",
+              "type": "EcdsaSecp256k1VerificationKey2019",
+              "publicKeyJwk": {
+                "kty": "EC",
+                "crv": "secp256k1",
+                "x": "rRYs-Obi7HSuk7Jwns8mbW96Yb2m97ORQ4PqzRkFLAc",
+                "y": "gWAYGcry2GrHRvaAdZLUeXuTxikb_g0v0I_gnqD8IL4"
+              }
+            }
+          ],
+          "authentication": [
+            "#key-1"
+          ]
+        },
+        "didDocumentMetadata": {
+          "created": "2025-11-24T20:36:52Z",
+          "versionId": "z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb",
+          "version": 1,
+          "confirmed": true,
+          "isOwned": true
+        },
+        "didDocumentData": {},
+        "mdip": {
+          "version": 1,
+          "type": "agent",
+          "registry": "hyperswarm"
+        }
+      }
+    },
+    {
+      "function": "resolve",
+      "input": {
+        "did": "did:mdip:z3v8AuahkSHcnQsmZ7hExbAXnDCXFQmgy4eM7MYRxYzJzRSQXRo",
+        "resolutionOptions": {}
+      },
+      "output": {
+        "@context": "https://w3id.org/did-resolution/v1",
+        "didResolutionMetadata": {},
+        "didDocument": {
+          "id": "did:mdip:z3v8AuahkSHcnQsmZ7hExbAXnDCXFQmgy4eM7MYRxYzJzRSQXRo"
+        },
+        "didDocumentMetadata": {
+          "deactivated": true,
+          "created": "2025-11-24T20:39:44Z",
+          "deleted": "2025-11-24T20:39:57Z",
+          "versionId": "z3v8Auae2mC5d2moXWVcNRQhKgK34K8NbFLFwX5anf6qdRkbsFX",
+          "version": 2,
+          "confirmed": false,
+          "isOwned": true
+        },
+        "didDocumentData": {},
+        "mdip": {
+          "version": 1,
+          "type": "asset",
+          "registry": "hyperswarm"
+        }
+      }
+    },
+    {
+      "function": "resolveRepresentation",
+      "input": {
+        "did": "did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb",
+        "resolutionOptions": {
+          "accept": "application/did+json"
+        }
+      },
+      "output": {
+        "didResolutionMetadata": {
+          "contentType": "application/did+json"
+        },
+        "didDocumentStream": "{\"id\":\"did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb\",\"verificationMethod\":[],\"service\":[]}",
+        "didDocumentMetadata": {}
+      }
+    }
+  ]
+}
