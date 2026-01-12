@@ -1,0 +1,75 @@
+{
+  "didMethod": "did:mdip",
+  "implementation": "MDIP DID Method",
+  "implementer": "Self ID",
+  "supportedContentTypes": [
+    "application/did+json",
+    "application/did+ld+json"
+  ],
+  "dids": [
+    "did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb"
+  ],
+  "didParameters": {
+    "atVersion": "did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb?atVersion=1",
+    "atTime": "did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb?atTime=2025-11-24T20:36:52Z"
+  },
+  "did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb": {
+    "didDocumentDataModel": {
+      "properties": {
+        "id": "did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb",
+        "verificationMethod": [
+          {
+            "id": "#key-1",
+            "controller": "did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb",
+            "type": "EcdsaSecp256k1VerificationKey2019",
+            "publicKeyJwk": {
+              "kty": "EC",
+              "crv": "secp256k1",
+              "x": "rRYs-Obi7HSuk7Jwns8mbW96Yb2m97ORQ4PqzRkFLAc",
+              "y": "gWAYGcry2GrHRvaAdZLUeXuTxikb_g0v0I_gnqD8IL4"
+            }
+          }
+        ],
+        "authentication": [
+          "#key-1"
+        ]
+      }
+    },
+    "application/did+json": {
+      "didDocumentDataModel": {
+        "representationSpecificEntries": {}
+      },
+      "representation": "{\"id\":\"did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb\",\"verificationMethod\":[{\"id\":\"#key-1\",\"controller\":\"did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"publicKeyJwk\":{\"kty\":\"EC\",\"crv\":\"secp256k1\",\"x\":\"rRYs-Obi7HSuk7Jwns8mbW96Yb2m97ORQ4PqzRkFLAc\",\"y\":\"gWAYGcry2GrHRvaAdZLUeXuTxikb_g0v0I_gnqD8IL4\"}}],\"authentication\":[\"#key-1\"]}",
+      "didDocumentMetadata": {
+        "created": "2025-11-24T20:36:52Z",
+        "versionId": "z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb",
+        "version": "1",
+        "confirmed": true,
+        "isOwned": true
+      },
+      "didResolutionMetadata": {
+        "contentType": "application/did+json"
+      }
+    },
+    "application/did+ld+json": {
+      "didDocumentDataModel": {
+        "representationSpecificEntries": {
+          "@context": [
+            "https://www.w3.org/ns/did/v1"
+          ]
+        }
+      },
+      "representation": "{\"@context\":[\"https://www.w3.org/ns/did/v1\"],\"id\":\"did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb\",\"verificationMethod\":[{\"id\":\"#key-1\",\"controller\":\"did:mdip:z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb\",\"type\":\"EcdsaSecp256k1VerificationKey2019\",\"publicKeyJwk\":{\"kty\":\"EC\",\"crv\":\"secp256k1\",\"x\":\"rRYs-Obi7HSuk7Jwns8mbW96Yb2m97ORQ4PqzRkFLAc\",\"y\":\"gWAYGcry2GrHRvaAdZLUeXuTxikb_g0v0I_gnqD8IL4\"}}],\"authentication\":[\"#key-1\"]}",
+      "didDocumentMetadata": {
+        "created": "2025-11-24T20:36:52Z",
+        "versionId": "z3v8AuacfyAXsREoDzbCMvvdjSpwegxkZdDHhhFTrvNaFvE5dHb",
+        "version": "1",
+        "confirmed": true,
+        "isOwned": true
+      },
+      "didResolutionMetadata": {
+        "contentType": "application/did+ld+json"
+      }
+    }
+  }
+}
